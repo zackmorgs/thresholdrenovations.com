@@ -1,0 +1,74 @@
+---
+import CommonHead from "../../components/common-head.astro";
+import "../../styles/css/main.min.css";
+
+import Nav from "../../components/nav.astro";
+import Footer from "../../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>
+			Window & Door Installation Winona, MN | Threshold Renovations
+		</title>
+		<meta
+			name="title"
+			content="Window & Door Installation Winona, MN | Threshold Renovations"
+		/>
+		<meta
+			name="description"
+			content="Upgrade your home with expert window and door installation in Winona, MN. Threshold Renovations delivers energy efficiency, style, and lasting quality."
+		/>
+		<CommonHead />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Service",
+				"name": "Windows & Doors Installation",
+				"description": "Upgrade your home with expert window and door installation in Winona, MN. Threshold Renovations delivers energy efficiency, style, and lasting quality.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Threshold Renovations",
+					"url": "https://thresholdrenovations.com",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Winona",
+						"addressRegion": "MN",
+						"addressCountry": "US"
+					}
+				},
+				"areaServed": "Winona, MN",
+				"url": "https://thresholdrenovations.com/services/windows-doors"
+			}
+		</script>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="hero" id="hero_windows">
+				<h2>Windows & Doors</h2>
+			</header>
+			<section class="section">
+				<div class="content">
+					<div class="content-text">
+						<p>
+							Upgrade your home with new windows and doors that
+							improve energy efficiency, security, and curb
+							appeal. We handle precise installation to ensure a
+							perfect fit.
+						</p>
+						<div class="picture">
+							<img src="/assets/img/services/thresholds/27.jpg" alt="Door Installation">
+							<div class="caption">Door Installation</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

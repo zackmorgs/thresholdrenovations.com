@@ -1,0 +1,48 @@
+---
+const testimonials = [
+    {
+        name: "Bonnie Brang",
+        testimonial:
+            "Very satisfied with the quality of work and working with Sam. Prices reasonable. I've heard lots of horror stories with not showing up or work for one day and don't hear from them again. Very reliable and would use again.",
+    },
+    {
+        name: "Paperbacks and Pieces",
+        testimonial:
+            "Huge thank you to Threshold Renovations   for helping us get rid of the musty wallpaper,  repair, and repaint the walls upstairs. Huge thank you to Threshold Renovations   for helping us get rid of the musty wallpaper,  repair, and repaint the walls upstairs.",
+    },
+    // {
+    //     testimonial:
+    //         "We 10/10 recommend Sam for remodel work. He was super nice, easy to work with, did a FANTASTIC job, and his quote came in under the price I originally thought up.",
+    // },
+    {
+        name: "Britta Blain",
+        testimonial:
+            "I highly recommend Threshold Renovations! Sam has worked on my property for several years now, and there’s never a job he can’t do. He can figure anything out! He works careful and thoroughly. He never wastes a minute. And I’m always satisfied with the finished project!",
+    },
+    {
+        name: "Kathryn Hesch",
+        testimonial: "All the work Sam has done for me was done quickly and well."
+    }
+];
+---
+
+<section id="testimonials" class="section bg-black">
+    <div class="content">
+        <h2>Testimonials</h2>
+        <hr class="rule" />
+        <ul id="testimonial_list">
+            {
+                testimonials.map((item) => (
+                    <li>
+                        <blockquote class="testimonial-quote">
+                            <p>"{item.testimonial}"</p>
+                            <footer class="testimonial-name">
+                                <cite>{item.name}</cite>
+                            </footer>
+                        </blockquote>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</section>

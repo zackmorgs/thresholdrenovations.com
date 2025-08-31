@@ -1,0 +1,125 @@
+---
+import CommonHead from "../components/common-head.astro";
+import "../styles/css/main.min.css";
+
+import Nav from "../components/nav.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>
+			About Threshold Renovations | Trusted Contractor in Winona
+		</title>
+		<meta
+			name="title"
+			content="Request a Bid | Threshold Renovations Winona, MN"
+		/>
+		<meta
+			name="description"
+			content="Request a free bid from Threshold Renovations in Winona, MN. Get expert estimates for remodeling, renovations, and home improvement projects today."
+		/>
+		<CommonHead />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Service",
+				"name": "Request a Bid",
+				"description": "Request a free bid from Threshold Renovations in Winona, MN. Get expert estimates for remodeling, renovations, and home improvement projects today.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Threshold Renovations",
+					"url": "https://thresholdrenovations.com",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Winona",
+						"addressRegion": "MN",
+						"addressCountry": "US"
+					}
+				},
+				"areaServed": "Winona, MN",
+				"url": "https://thresholdrenovations.com/request-a-bid"
+			}
+		</script>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="hero" id="hero_bid">
+				<h2>Request a Bid</h2>
+			</header>
+			<section class="section">
+				<div class="content">
+					<div class="content-text">
+						<p>
+							Fill out the form below to request a bid for your
+							project. Our team will review your request and get
+							back to you as soon as possible.
+						</p>
+						<input
+							class="form-input"
+							id="name"
+							type="text"
+							required="true"
+							placeholder="Name"
+						/>
+						<input
+							class="form-input"
+							id="email"
+							type="email"
+							required="true"
+							placeholder="Email"
+							pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+						/>
+						<textarea
+							class="form-input"
+							id="details"
+							required="true"
+							placeholder="Project Details"></textarea>
+						<a
+							class="btn btn-primary text-center"
+							id="mailtoBtn"
+							href="#">Request Bid</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script>
+			// Mailto implementation
+			const mailtoBtn = document.getElementById("mailtoBtn");
+			if (mailtoBtn) {
+				mailtoBtn.addEventListener("click", function (e) {
+					e.preventDefault();
+					const nameInput = document.getElementById("name");
+					const emailInput = document.getElementById("email");
+					const detailsInput = document.getElementById("details");
+					const name =
+						nameInput && "value" in nameInput
+							? (nameInput as HTMLInputElement).value
+							: "";
+					const email =
+						emailInput && "value" in emailInput
+							? (emailInput as HTMLInputElement).value
+							: "";
+					const details =
+						detailsInput && "value" in detailsInput
+							? (detailsInput as HTMLTextAreaElement).value
+							: "";
+					const subject = encodeURIComponent(
+						"Bid Request from " + name,
+					);
+					const body = encodeURIComponent(
+						`Name: ${name}\nEmail: ${email}\nProject Details: ${details}`,
+					);
+					window.location.href = `mailto:thresholdrenovations@gmail.com?subject=${subject}&body=${body}`;
+				});
+			}
+		</script>
+		<Footer />
+	</body>
+</html>

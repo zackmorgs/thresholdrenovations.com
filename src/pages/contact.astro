@@ -1,0 +1,77 @@
+---
+import CommonHead from "../components/common-head.astro";
+import "../styles/css/main.min.css";
+
+import Nav from "../components/nav.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Contact Threshold Renovations | Winona, MN Contractors</title>
+        <meta
+            name="title"
+            content="Contact Threshold Renovations | Winona, MN Contractors"
+        />
+        <meta
+            name="description"
+            content="Get in touch with Threshold Renovations in Winona, MN. We specialize in home remodeling, kitchen, bath, and custom renovations with quality craftsmanship you can trust."
+        />
+
+        <CommonHead />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ContactPage",
+                "name": "Contact Threshold Renovations",
+                "url": "https://thresholdrenovations.com/contact",
+                "description": "Get in touch with Threshold Renovations in Winona, MN. We specialize in home remodeling, kitchen, bath, and custom renovations with quality craftsmanship you can trust.",
+                "contactOption": {
+                    "@type": "ContactPoint",
+                    "telephone": "+1-507-313-5488",
+                    "email": "thresholdrenovations@gmail.com",
+                    "contactType": "customer service"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <Nav />
+        <main>
+            <header class="hero" id="hero_contact">
+                <h2>Contact</h2>
+            </header>
+            <section id="section_contact" class="section">
+                <div class="content">
+                    <div class="content-text">
+                        <p>
+                            If you have any questions or would like to request a
+                            bid, please email or call us via phone or email
+                            listed below.
+                        </p>
+                        <p><b>Email:</b> thresholdrenovations@gmail.com</p>
+                        <p><b>Phone:</b> 1-(507) 313-5488</p>
+                        <br />
+                        <br />
+                        <div class="text-center">
+                            <a
+                                href="mailto:thresholdrenovations@gmail.com"
+                                class="btn"
+                            >
+                                Email Us
+                            </a>
+                            <br />
+
+                            <a href="tel:+15072051331" class="btn"> Call Us </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <Footer />
+    </body>
+</html>

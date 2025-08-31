@@ -1,0 +1,94 @@
+---
+import CommonHead from "../components/common-head.astro";
+import "../styles/css/main.min.css";
+
+import Nav from "../components/nav.astro";
+import ServicesComponent from "../components/services.astro";
+import Cta from "../components/cta.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Renovation & Remodeling Services | Threshold Renovations</title>
+		<meta
+			name="title"
+			content="Renovation & Remodeling Services | Threshold Renovations"
+		/>
+		<meta
+			name="description"
+			content="Explore Threshold Renovations’ full range of services in Winona, MN. Kitchen, bath, basement, and custom home remodeling with expert craftsmanship."
+		/>
+		<CommonHead />
+		<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Service",
+	"name": "Renovation & Remodeling Services",
+	"description": "Explore Threshold Renovations’ full range of services in Winona, MN. Kitchen, bath, basement, and custom home remodeling with expert craftsmanship.",
+	"provider": {
+		"@type": "LocalBusiness",
+		"name": "Threshold Renovations",
+		"url": "https://thresholdrenovations.com",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Winona",
+			"addressRegion": "MN",
+			"addressCountry": "US"
+		}
+	},
+	"areaServed": "Winona, MN",
+	"url": "https://thresholdrenovations.com/services"
+}
+		</script>
+	</head>
+	<body>
+		<Nav />
+		<header class="hero" id="hero_services">
+			<div class="content">
+				<h2>Our Services</h2>
+				<a href="tel:" class="btn btn-primary"> Request a Bid </a>
+				<!-- <a href="" class="btn">
+
+				</a> -->
+			</div>
+		</header>
+		<main>
+			<ServicesComponent />
+			<section id="services_about" class="service">
+				<div class="content">
+					<div class="content-text">
+						<h3>About Our Services</h3>
+						<p>
+							At Threshold Renovations, we provide a full range of
+							home improvement and construction solutions tailored
+							to your needs. From small repairs to major upgrades,
+							our team combines craftsmanship, reliability, and
+							attention to detail on every project.
+						</p>
+						<p>
+							Whether you’re looking to enhance your home’s
+							interior with fresh drywall and flooring, open up
+							your living space with custom carpentry, or add
+							value and comfort through decks, outdoor spaces, and
+							outbuildings, we’ve got you covered.
+						</p>
+						<p>
+							We also specialize in windows, doors, and specialty
+							projects, ensuring your property is both functional
+							and inviting. No matter the size of the job, we
+							approach it with the same commitment: to make your
+							vision a reality.
+						</p>
+					</div>
+				</div>
+			</section>
+			<Cta />
+		</main>
+		<Footer />
+	</body>
+</html>

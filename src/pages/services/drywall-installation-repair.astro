@@ -1,0 +1,86 @@
+---
+import CommonHead from "../../components/common-head.astro";
+import "../../styles/css/main.min.css";
+
+import Nav from "../../components/nav.astro";
+import Footer from "../../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>
+			Drywall Installation & Repair Winona, MN | Threshold Renovations
+		</title>
+		<meta
+			name="title"
+			content="Drywall Installation & Repair Winona, MN | Threshold Renovations"
+		/>
+		<meta
+			name="description"
+			content="Threshold Renovations provides expert drywall installation and repair in Winona, MN. Smooth finishes, seamless repairs, and professional craftsmanship."
+		/>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Service",
+				"name": "Drywall Installation & Repair",
+				"description": "Seamless drywall installation and repair services across Winona and the surrounding area. Perfectly smooth walls are the foundation for any great remodel.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Threshold Renovations",
+					"url": "https://thresholdrenovations.com",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Winona",
+						"addressRegion": "MN",
+						"addressCountry": "US"
+					}
+				},
+				"areaServed": "Winona, MN",
+				"url": "https://thresholdrenovations.com/services/drywall-installation"
+			}
+		</script>
+		<CommonHead />
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="hero" id="hero_drywall">
+				<h2>Drywall Installation & Repair</h2>
+			</header>
+			<section class="section">
+				<div class="content">
+					<div class="content-text">
+						<p>
+							Our team provides seamless drywall installation and
+							repair services across Winona and the surrounding
+							area. Perfectly smooth walls are the foundation for
+							any great remodel.Our team provides seamless drywall
+							installation and repair services across Winona and
+							the surrounding area. Perfectly smooth walls are the
+							foundation for any great remodel.
+						</p>
+						<div class="picture">
+							<img src="/assets/img/services/wall-refinishing/8.jpg" alt="Kitchen Wall Refinishing">
+							<div class="caption">
+								Kitchen Wall Refinishing
+							</div>
+						</div>
+						<br>
+						<div class="picture">
+							<img src="/assets/img/services/wall-refinishing/4.jpg" alt="Kids's Room Drywall">
+							<div class="caption">
+								Kids's Room Drywall
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

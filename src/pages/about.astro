@@ -1,0 +1,132 @@
+---
+import CommonHead from "../components/common-head.astro";
+import "../styles/css/main.min.css";
+
+import Nav from "../components/nav.astro";
+import Testimonials from "../components/testimonials.astro";
+import Cta from "../components/cta.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>
+			About Threshold Renovations | Trusted Contractor in Winona
+		</title>
+		<meta
+			name="title"
+			content="About Threshold Renovations | Trusted Contractor in Winona"
+		/>
+		<meta
+			name="description"
+			content="Learn about Threshold Renovations in Winona, MN. Expert home remodeling, kitchen, bath, and custom renovations with quality craftsmanship you can trust."
+		/>
+		<CommonHead />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Threshold Renovations",
+				"url": "https://thresholdrenovations.com",
+				"description": "Expert home remodeling, kitchen, bath, and custom renovations with quality craftsmanship you can trust.",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Winona",
+					"addressRegion": "MN",
+					"addressCountry": "US"
+				},
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+1-507-313-5488",
+					"email": "thresholdrenovations@gmail.com",
+					"contactType": "customer service"
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="hero" id="hero_about">
+				<h2>About</h2>
+			</header>
+			<section class="section">
+				<div class="content">
+					<div class="content-text">
+						<p>
+							Founded in 2023, <b>Threshold Renovations</b> is a locally
+							owned business based in <b>Winona, Minnesota</b>,
+							specializing in <b>home renovations</b>, <b
+								>fencing</b
+							>, <b>decks</b>, and <b>custom outbuildings</b>.
+						</p>
+						<p>
+							We take pride in delivering <b
+								>exceptional craftsmanship</b
+							> with <b>close attention to detail</b>. We believe
+							that every project—whether it’s refreshing a home,
+							building a new deck, or creating a one-of-a-kind
+							structure—should reflect both <b>quality and care</b
+							>.
+						</p>
+						<p>
+							At <b>Threshold Renovations</b>, we value <b
+								>transparency</b
+							> and <b>fairness</b>. We are committed to providing
+							our clients with <b>reliable service</b>, <b
+								>honest communication</b
+							>, and results that stand the test of time—all at a <b
+								>fair price</b
+							>.
+						</p>
+						<p>
+							From concept to completion, our goal is simple: to <b
+								>make your vision a reality</b
+							> while ensuring a <b>smooth</b>, <b>stress-free</b>
+							experience.
+						</p>
+						<h3>Meet Sam Kendall</h3>
+						<div class="picture">
+							<img
+								src="/assets/img/sam.webp"
+								alt="About Threshold Renovations"
+							/>
+							<div class="caption">Sam Kendall</div>
+						</div>
+						<p>
+							Sam Kendall, owner and operator of Threshold
+							Renovations, is a Rochester, MN native who has
+							proudly called Winona home since 2010. After earning
+							his Associate’s Degree in Carpentry from Minnesota
+							State College–SE Technical in 2011, Sam began
+							building his career in the local community.
+						</p>
+						<p>
+							Over the years, he has developed a reputation for
+							his eye for detail, reliability, and a genuine
+							commitment to helping clients bring their home
+							improvement visions to life.
+						</p>
+						<p>
+							Sam lives in Winona with his wife, their three
+							children, a couple lively dogs, and a flock of
+							backyard chickens.
+						</p>
+						<p>
+							When he’s not on the job site, you can usually find
+							him outdoors, working on house projects, or spending
+							time with his family.
+						</p>
+					</div>
+				</div>
+			</section>
+			<Testimonials />
+			<Cta />
+		</main>
+		<Footer />
+	</body>
+</html>

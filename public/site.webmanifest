@@ -1,0 +1,19 @@
+{
+    "name": "Threshold Renovations",
+    "short_name": "Threshold",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "rgb(253, 127, 17)",
+    "background_color": "#141414",
+    "display": "standalone"
+}
