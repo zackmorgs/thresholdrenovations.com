@@ -1,8 +1,42 @@
 <section id="cta" class="section">
     <div class="content text-center">
         <h2>Ready to Transform Your Space?</h2>
-        <hr class="rule">
-        <a href="tel:+15073135488" class="btn btn-primary">Request a Bid</a>
-        <a href="/contact" class="btn btn-secondary">Contact Us</a>
+        <hr class="rule" />
+        <a id="cta_cta_bid" href="/request-a-bid/" class="btn btn-primary"
+            >Request a Free Bid</a
+        >
+        <a id="cta_cta_contact" href="/contact" class="btn btn-secondary"
+            >Contact Us</a
+        >
     </div>
 </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const bidBtn = document.getElementById("cta_cta_bid");
+        const contactBtn = document.getElementById("cta_cta_contact");
+
+        if (bidBtn) {
+            bidBtn.addEventListener("click", function () {
+                console.log("cta_cta_bid clicked.")
+                if (window.gtag) {
+                    window.gtag("event", "cta_bid_click", {
+                        event_category: "CTA",
+                        event_label: "Request a Free Bid (CTA)",
+                    });
+                }
+            });
+        }
+
+        if (contactBtn) {
+            contactBtn.addEventListener("click", function () {
+                console.log("cta_cta_contact clicked.")
+                if (window.gtag) {
+                    window.gtag("event", "cta_contact_click", {
+                        event_category: "CTA",
+                        event_label: "Contact Us (CTA)",
+                    });
+                }
+            });
+        }
+    });
+</script>

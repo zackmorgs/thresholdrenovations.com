@@ -120,6 +120,23 @@ import Footer from "../components/footer.astro";
 				});
 			}
 		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const bidBtn = document.getElementById("mailtoBtn");
+
+				if (bidBtn) {
+					bidBtn.addEventListener("click", function () {
+						console.log("bidBtn clicked.");
+						if (window.gtag) {
+							window.gtag("event", "bid_page_bid_click", {
+								event_category: "CTA",
+								event_label: "Request a Free Bid (Form)",
+							});
+						}
+					});
+				}
+			});	
+		</script>
 		<Footer />
 	</body>
 </html>

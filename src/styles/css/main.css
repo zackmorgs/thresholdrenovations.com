@@ -739,6 +739,7 @@ body {
   .hero-content .btn {
     display: block;
     max-width: 12ch;
+    min-width: 18ch;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
@@ -749,8 +750,10 @@ body {
   }
   #service_list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    max-width: 64ch;
+    margin: 0 auto;
   }
   #testimonials {
     text-align: center;
@@ -761,7 +764,7 @@ body {
     margin: 0 auto 1rem;
   }
   .section .btn {
-    max-width: 18ch;
+    max-width: 20ch;
     margin: 0 auto 1rem;
   }
   #section_review .btn {
@@ -792,7 +795,6 @@ body {
   }
   .hero-content .btn {
     display: block;
-    min-width: 12ch;
   }
   .hero-content .btn.btn-fb {
     display: inline-block;
@@ -832,7 +834,7 @@ body {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     background: rgba(0, 0, 0, 0.5);
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
     backdrop-filter: blur(0.5rem);
   }
   #nav_list li:nth-child(5) {
@@ -843,10 +845,11 @@ body {
   .nav-link {
     margin: 0 0.5rem 0;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-transform: none;
+    padding: 0.5rem 1rem;
   }
   .nav-link:hover {
     transform: scale(1.05);
-    color: var(--body-orange);
   }
   #testimonial_list {
     grid-gap: 2rem;
@@ -873,7 +876,7 @@ body {
 }
 @media (min-width: 1536px) {
   #service_list {
-    max-width: 88ch;
+    max-width: 64ch;
     margin: auto auto;
   }
 }

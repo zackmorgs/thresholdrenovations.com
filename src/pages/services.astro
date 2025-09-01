@@ -3,7 +3,7 @@ import CommonHead from "../components/common-head.astro";
 import "../styles/css/main.min.css";
 
 import Nav from "../components/nav.astro";
-import ServicesComponent from "../components/services.astro";
+import ServicesOverview from "../components/services-overview.astro";
 import Cta from "../components/cta.astro";
 import Footer from "../components/footer.astro";
 ---
@@ -25,25 +25,25 @@ import Footer from "../components/footer.astro";
 		/>
 		<CommonHead />
 		<script type="application/ld+json">
-{
-	"@context": "https://schema.org",
-	"@type": "Service",
-	"name": "Renovation & Remodeling Services",
-	"description": "Explore Threshold Renovations’ full range of services in Winona, MN. Kitchen, bath, basement, and custom home remodeling with expert craftsmanship.",
-	"provider": {
-		"@type": "LocalBusiness",
-		"name": "Threshold Renovations",
-		"url": "https://thresholdrenovations.com",
-		"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "Winona",
-			"addressRegion": "MN",
-			"addressCountry": "US"
-		}
-	},
-	"areaServed": "Winona, MN",
-	"url": "https://thresholdrenovations.com/services"
-}
+			{
+				"@context": "https://schema.org",
+				"@type": "Service",
+				"name": "Renovation & Remodeling Services",
+				"description": "Explore Threshold Renovations’ full range of services in Winona, MN. Kitchen, bath, basement, and custom home remodeling with expert craftsmanship.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Threshold Renovations",
+					"url": "https://thresholdrenovations.com",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Winona",
+						"addressRegion": "MN",
+						"addressCountry": "US"
+					}
+				},
+				"areaServed": "Winona, MN",
+				"url": "https://thresholdrenovations.com/services"
+			}
 		</script>
 	</head>
 	<body>
@@ -58,7 +58,7 @@ import Footer from "../components/footer.astro";
 			</div>
 		</header>
 		<main>
-			<ServicesComponent />
+			<ServicesOverview/>
 			<section id="services_about" class="service">
 				<div class="content">
 					<div class="content-text">

@@ -614,6 +614,7 @@ body {
         .btn {
             display: block;
             max-width: 12ch;
+            min-width: 18ch;
             margin: 0 auto;
             margin-bottom: 1rem;
         }
@@ -628,8 +629,11 @@ body {
 
     #service_list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        max-width: 64ch;
+        margin: 0 auto;
     }
 
     #testimonials {
@@ -644,7 +648,8 @@ body {
 
     .section {
         .btn {
-            max-width: 18ch;
+            // max-width: 28ch;
+            max-width: 20ch;
             margin: 0 auto 1rem;
         }
     }
@@ -686,7 +691,7 @@ body {
 
         .btn {
             display: block;
-            min-width: 12ch;
+
         }
 
         .btn.btn-fb {
@@ -737,7 +742,7 @@ body {
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         background: rgba(0, 0, 0, 0.5);
-        padding: 1rem 0.5rem;
+        padding: 0.5rem;
         backdrop-filter: blur(0.5rem);
 
         li {
@@ -752,11 +757,12 @@ body {
     .nav-link {
         margin: 0 0.5rem 0;
         transition: transform .3s ease-in-out, background-color .3s ease-in-out;
-
+        text-transform: none;
+        padding:0.5rem 1rem;
         &:hover {
             transform: scale(1.05);
             // background: var(--light-grey);
-            color: var(--body-orange);
+            // color: var(--body-orange);
         }
     }
 
@@ -802,7 +808,7 @@ body {
 
 @media (min-width: 1536px) {
     #service_list {
-        max-width: 88ch;
+        max-width: 64ch;
         margin: auto auto;
     }
 

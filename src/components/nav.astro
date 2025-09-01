@@ -1,11 +1,4 @@
-<script type="text/javascript">
-    const toggleNav = () => {
-        const nav = document.getElementById("nav_main");
-        nav.classList.toggle("open");
-    }
-</script>
-
-<nav id="nav_main" >
+<nav id="nav_main">
     <div id="nav_bar">
         <button id="nav_toggle" onclick="toggleNav()">
             <span></span>
@@ -20,9 +13,54 @@
             <li><a class="nav-link" href="/services">Services</a></li>
             <li><a class="nav-link" href="/contact">Contact</a></li>
             <li>
-                <a href="/request-a-bid" class="nav-link nav-link-primary">Request a Bid</a>
+                <a
+                    id="nav_bid"
+                    href="/request-a-bid"
+                    class="nav-link nav-link-primary">Request a Bid</a
+                >
             </li>
-            <li><a href="tel:+15072051331" class="nav-link nav-link-secondary">Call Us</a></li>
+            <li>
+                <a
+                    id="nav_call"
+                    href="tel:+15072051331"
+                    class="nav-link nav-link-secondary">Call Us</a>
+            </li>
         </ul>
     </div>
 </nav>
+
+<script type="text/javascript">
+    const toggleNav = () => {
+        const nav = document.getElementById("nav_main");
+        nav.classList.toggle("open");
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const bidBtn = document.getElementById("nav_bid");
+        const callBtn = document.getElementById("nav_call");
+
+        if (bidBtn) {
+            bidBtn.addEventListener("click", function () {
+                console.log("nav_bid clicked.");
+                if (window.gtag) {
+                    window.gtag("event", "nav_bid_click", {
+                        event_category: "CTA",
+                        event_label: "Request a Free Bid (Nav)",
+                    });
+                }
+            });
+        }
+
+        if (callBtn) {
+            callBtn.addEventListener("click", function () {
+                console.log("nav_call clicked.");
+                if (window.gtag) {
+                    window.gtag("event", "nav_call_click", {
+                        event_category: "CTA",
+                        event_label: "Call (Nav)",
+                    });
+                }
+            });
+        }
+    });
+</script>

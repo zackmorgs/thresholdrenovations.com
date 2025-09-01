@@ -1,11 +1,19 @@
 <header id="hero_main" class="hero">
-
-    <video id="hero_video" src="/assets/video/video-slideshow.webm" poster="/assets/img/poster.webp" autoplay muted loop playsinline></video>
+    <video
+        id="hero_video"
+        src="/assets/video/video-slideshow.webm"
+        poster="/assets/img/poster.webp"
+        autoplay
+        muted
+        loop
+        playsinline></video>
 
     <div class="hero-content">
         <img id="logo" src="/assets/img/logo.png" />
-        <a href="/request-a-bid" class="btn btn-primary">Request a Bid</a>
-        <a href="tel:+15073135488" class="btn"> Call </a>
+        <a id="hero_cta_bid" href="/request-a-bid" class="btn btn-primary"
+            >Request a Free Bid</a
+        >
+        <a id="hero_cta_call" href="tel:+15073135488" class="btn"> Call </a>
         <!-- <hr> -->
         <!-- <a href="https://www.facebook.com/ThresholdRenovationsWinona" target="_blank" class="btn btn-inline btn-fb">
             <svg
@@ -23,3 +31,33 @@
         </a> -->
     </div>
 </header>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const bidBtn = document.getElementById("hero_cta_bid");
+        const callBtn = document.getElementById("hero_cta_call");
+
+        if (bidBtn) {
+            bidBtn.addEventListener("click", function () {
+                console.log("hero_cta_bid clicked.");
+                if (window.gtag) {
+                    window.gtag("event", "cta_bid_click", {
+                        event_category: "CTA",
+                        event_label: "Request a Free Bid (Hero)",
+                    });
+                }
+            });
+        }
+
+        if (callBtn) {
+            callBtn.addEventListener("click", function () {
+                console.log("hero_cta_call clicked.");
+                if (window.gtag) {
+                    window.gtag("event", "cta_call_click", {
+                        event_category: "CTA",
+                        event_label: "Call (Hero)",
+                    });
+                }
+            });
+        }
+    });
+</script>

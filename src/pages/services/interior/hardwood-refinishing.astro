@@ -1,0 +1,75 @@
+---
+import CommonHead from "../../../components/common-head.astro";
+import "../../../styles/css/main.min.css";
+
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Flooring Installation Winona, MN | Threshold Renovations</title>
+        <meta
+            name="title"
+            content="Flooring Installation Winona, MN | Threshold Renovations"
+        />
+        <meta
+            name="description"
+            content="Upgrade your home with expert flooring installation in Winona, MN. Threshold Renovations installs hardwood, laminate, tile, and more with precision."
+        />
+        <CommonHead />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Flooring Installation",
+                "description": "Upgrade your home with expert flooring installation in Winona, MN. Threshold Renovations installs hardwood, laminate, tile, and more with precision.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "Threshold Renovations",
+                    "url": "https://thresholdrenovations.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Winona",
+                        "addressRegion": "MN",
+                        "addressCountry": "US"
+                    }
+                },
+                "areaServed": "Winona, MN",
+                "url": "https://thresholdrenovations.com/services/flooring-installation"
+            }
+        </script>
+    </head>
+    <body>
+        <Nav />
+        <main>
+            <header class="hero" id="hero_flooring">
+                <h2>Hardwood Refinishing</h2>
+            </header>
+            <section class="section">
+                <div class="content">
+                    <div class="content-text">
+                        <p>
+                            Few services in our area focus on true specialty
+                            hardwood refinishing. We’re proud to provide that
+                            craftsmanship. Whether your floors need careful
+                            restoration, a new stain, or a fresh protective
+                            finish, we approach every project with the skill and
+                            patience fine hardwood deserves.
+                        </p>
+                        <p>
+                            The result is a floor that looks renewed, lasts for
+                            years, and showcases the timeless appeal of natural
+                            wood.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <Footer />
+    </body>
+</html>
