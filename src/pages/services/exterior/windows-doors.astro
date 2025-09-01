@@ -1,0 +1,80 @@
+---
+import CommonHead from "../../../components/common-head.astro";
+import "../../../styles/css/main.min.css";
+
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>
+            Window and Door Renovations Winona, MN | Threshold Renovations
+        </title>
+        <meta
+            name="title"
+            content="Window and Door Renovations Winona, MN | Threshold Renovations"
+        />
+        <meta
+            name="description"
+            content="Enhance your home with custom window and door renovations from Threshold Renovations in Winona, MN. Built to last with expert craftsmanship."
+        />
+        <CommonHead />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Windows and Doors Renovations",
+                "description": "Enhance your home with custom window and door renovations from Threshold Renovations in Winona, MN. Built to last with expert craftsmanship.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "Threshold Renovations",
+                    "url": "https://thresholdrenovations.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Winona",
+                        "addressRegion": "MN",
+                        "addressCountry": "US"
+                    }
+                },
+                "areaServed": "Winona, MN",
+                "url": "https://thresholdrenovations.com/services/exterior/windows-doors"
+            }
+        </script>
+    </head>
+    <body>
+        <Nav />
+        <main>
+            <header class="hero" id="hero_windows_doors">
+                <h2>Windows and Doors</h2>
+            </header>
+            <section class="section">
+                <div class="content">
+                    <div class="content-text">
+                        <p>
+                            Enhance your home's curb appeal and energy
+                            efficiency with our expert window and door
+                            renovations. At Threshold Renovations, we specialize
+                            in providing high-quality, custom solutions tailored
+                            to your specific needs.
+                        </p>
+                        <div class="picture">
+                            <img
+                                src="/assets/img/services/thresholds/27.jpg"
+                                alt=""
+                            />
+                            <div class="caption">
+                                <p>Door Installation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <Footer />
+    </body>
+</html>

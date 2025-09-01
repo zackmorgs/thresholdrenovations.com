@@ -1,0 +1,84 @@
+---
+import CommonHead from "../../../components/common-head.astro";
+import "../../../styles/css/main.min.css";
+
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Flooring Installation Winona, MN | Threshold Renovations</title>
+		<meta
+			name="title"
+			content="Flooring Installation Winona, MN | Threshold Renovations"
+		/>
+		<meta
+			name="description"
+			content="Upgrade your home with expert flooring installation in Winona, MN. Threshold Renovations installs hardwood, laminate, tile, and more with precision."
+		/>
+		<CommonHead />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Service",
+				"name": "Flooring Installation",
+				"description": "Upgrade your home with expert flooring installation in Winona, MN. Threshold Renovations installs hardwood, laminate, tile, and more with precision.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Threshold Renovations",
+					"url": "https://thresholdrenovations.com",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Winona",
+						"addressRegion": "MN",
+						"addressCountry": "US"
+					}
+				},
+				"areaServed": "Winona, MN",
+				"url": "https://thresholdrenovations.com/services/flooring-installation"
+			}
+		</script>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="hero" id="hero_flooring">
+				<h2>Flooring Installation</h2>
+			</header>
+			<section class="section">
+				<div class="content">
+					<div class="content-text">
+						<p>
+							We install durable flooring of all types—vinyl,
+							laminate, tile, and more—we also offer professional
+							hardwood floor refinishing to restore your home’s
+							natural beauty. Reliable flooring solutions built to
+							last.
+						</p>
+						<div class="picture">
+							<img
+								src="/assets/img/services/flooring/17.jpg"
+								alt="Flooring Installation"
+							/>
+							<div class="caption">Flooring Installation</div>
+						</div>
+						<br />
+						<div class="picture">
+							<img
+								src="/assets/img/services/flooring/18.jpg"
+								alt="Flooring Installation - 2"
+							/>
+							<div class="caption">Flooring Installation pt. 2</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

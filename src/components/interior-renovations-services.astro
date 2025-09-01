@@ -1,0 +1,59 @@
+---
+import { late, lazy } from "astro:schema";
+
+const services = [
+    {
+        title: "Kitchen Remodeling",
+        link: "/services/interior/kitchen-remodeling",
+    },
+    {
+        title: "Bathroom Remodeling",
+        link: "/services/interior/bathroom-remodeling",
+    },
+    {
+        title: "Basement Finishing",
+        link: "/services/interior/basement-finishing",
+    },
+    {
+        title: "Drywall Installation & Repair",
+        link: "/services/interior/drywall-installation-repair",
+    },
+    {
+        title: "Flooring Installation",
+        link: "/services/interior/flooring-installation",
+    },
+    {
+        title: "Hardwood Refinishing",
+        link: "/services/interior/hardwood-refinishing",
+    }
+];
+---
+
+<section id="services" class="section bg-black">
+    <div class="content">
+        <h2>Services</h2>
+        <hr class="rule">
+        <ul id="service_list">
+            {
+                services.map((item, index) => (
+                    <li class="service-item" key={index}>
+                        <a href={item.link} class="service-link">
+                            <article class="service-article">
+                                <h3>{item.title}</h3>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="2rem"
+                                    width="2rem"
+                                    viewBox="0 -960 960 960"
+                                    fill="currentColor"
+                                >
+                                    <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                                </svg>
+                            </article>
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</section>

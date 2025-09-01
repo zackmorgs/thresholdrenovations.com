@@ -1,0 +1,75 @@
+---
+import CommonHead from "../../../components/common-head.astro";
+import "../../../styles/css/main.min.css";
+
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Custom Carpentry Winona, MN | Threshold Renovations</title>
+		<meta
+			name="title"
+			content="Custom Carpentry Winona, MN | Threshold Renovations"
+		/>
+		<meta
+			name="description"
+			content="Threshold Renovations offers expert custom carpentry in Winona, MN. Built-ins, trim, shelving, and woodwork crafted with precision and lasting quality."
+		/>
+		<CommonHead />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Service",
+				"name": "Custom Carpentry",
+				"description": "Threshold Renovations offers expert custom carpentry in Winona, MN. Built-ins, trim, shelving, and woodwork crafted with precision and lasting quality.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Threshold Renovations",
+					"url": "https://thresholdrenovations.com",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Winona",
+						"addressRegion": "MN",
+						"addressCountry": "US"
+					}
+				},
+				"areaServed": "Winona, MN",
+				"url": "https://thresholdrenovations.com/services/custom-work/custom-carpentry"
+			}
+		</script>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="hero" id="hero_carpentry">
+				<h2>Custom Carpentry</h2>
+			</header>
+			<section class="section">
+				<div class="content">
+					<div class="content-text">
+						<p>
+							From built-in shelving and trim work to creative
+							storage solutions, our custom carpentry adds
+							character, function, and craftsmanship to your home
+							renovation project.
+						</p>
+						<div class="picture">
+							<img
+								src="/assets/img/services/animal-dwellings/14.jpg"
+								alt="Custom Carpentry"
+							/>
+							<div class="caption">Custom Carpentry</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

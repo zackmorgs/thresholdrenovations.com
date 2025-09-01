@@ -1,0 +1,66 @@
+---
+import CommonHead from "../../../components/common-head.astro";
+import "../../../styles/css/main.min.css";
+
+import Nav from "../../../components/nav.astro";
+import ExteriorRenovationsServices from "../../../components/exterior-renovations-services.astro";
+import Footer from "../../../components/footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>
+			Exterior Renovations Winona, MN | Threshold Renovations
+		</title>
+		<meta
+			name="title"
+			content="Exterior Renovations Winona, MN | Threshold Renovations"
+		/>
+		<meta
+			name="description"
+			content="Threshold Renovations builds custom exterior renovations in Winona, MN — from deck installations to siding updates and more."
+		/>
+		<CommonHead />
+		<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Service",
+	"name": "Exterior Renovations",
+	"description": "Threshold Renovations builds custom exterior renovations in Winona, MN — from deck installations to siding updates and more.",
+	"provider": {
+		"@type": "LocalBusiness",
+		"name": "Threshold Renovations",
+		"url": "https://thresholdrenovations.com",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Winona",
+			"addressRegion": "MN",
+			"addressCountry": "US"
+		}
+	},
+	"areaServed": "Winona, MN",
+	"url": "https://thresholdrenovations.com/services/exterior-renovations"
+}
+		</script>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<header class="hero" id="hero_outbuildings">
+				<h2>Exterior Renovations</h2>
+			</header>
+            <ExteriorRenovationsServices />
+			<!-- <section class="section">
+				<div class="content">
+					<div class="content-text">
+					</div>
+				</div>
+			</section> -->
+		</main>
+		<Footer />
+	</body>
+</html>

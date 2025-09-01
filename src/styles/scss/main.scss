@@ -305,7 +305,8 @@ body {
     background: var(--off-black)
 }
 
-#service_list {
+#service_list,
+#service_overview_list {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -364,7 +365,25 @@ body {
 
 }
 
-.service-link[href="/services/kitchen-remodeling"] {
+.service-link[href="/services/interior"] {
+    background-image: url('/assets/img/poster.webp');
+}
+
+.service-link[href="/services/exterior"] {
+    background-image: url('/assets/img/services/decks/30.jpg');
+}
+
+.service-link[href="/services/custom-work"] {
+    background-image: url('/assets/img/services/decks/30.jpg');
+}
+
+// public/assets/img/services/animal-dwellings/14.jpg
+
+.service-link[href="/services/custom-work"] {
+    background-image: url('/assets/img/services/animal-dwellings/14.jpg');
+}
+
+.service-link[href="/services/interior/kitchen-remodeling"] {
     background-image: url('/assets/img/services/services-component/kitchen-remodeling.webp');
 }
 
@@ -373,7 +392,7 @@ body {
     background-image: url('/assets/img/services/services-component/large/kitchen-remodeling.webp');
 }
 
-.service-link[href="/services/bathroom-remodeling"] {
+.service-link[href="/services/interior/bathroom-remodeling"] {
     background-image: url('/assets/img/services/services-component/bathroom-remodeling.webp');
 }
 
@@ -381,7 +400,7 @@ body {
     background-image: url('/assets/img/services/services-component/large/bathroom-remodeling.webp');
 }
 
-.service-link[href="/services/basement-finishing"] {
+.service-link[href="/services/interior/basement-finishing"] {
     background-image: url('/assets/img/services/services-component/basement-finishing.webp');
 }
 
@@ -389,7 +408,7 @@ body {
     background-image: url('/assets/img/services/services-component/large/basement-finishing.webp');
 }
 
-.service-link[href="/services/drywall-installation-repair"] {
+.service-link[href="/services/interior/drywall-installation-repair"] {
     background-image: url('/assets/img/services/services-component/drywall-installation.webp');
 }
 
@@ -398,8 +417,12 @@ body {
     background-image: url('/assets/img/services/services-component/large/drywall-installation.webp');
 }
 
-.service-link[href="/services/flooring-installation"] {
+.service-link[href="/services/interior/flooring-installation"] {
     background-image: url('/assets/img/services/services-component/flooring-installation.webp');
+}
+
+.service-link[href="/services/interior/hardwood-refinishing"] {
+    background-image: url('/assets/img/services/services-component/hardwood-refinishing.png');
 }
 
 #hero_flooring,
@@ -407,7 +430,7 @@ body {
     background-image: url('/assets/img/services/services-component/large/flooring-installation.webp');
 }
 
-.service-link[href="/services/windows-doors"] {
+.service-link[href="/services/exterior/windows-doors"] {
     background-image: url('/assets/img/services/services-component/windows-doors.webp');
 }
 
@@ -415,7 +438,7 @@ body {
     background-image: url('/assets/img/services/services-component/large/windows-doors.webp');
 }
 
-.service-link[href="/services/decks-outdoor-spaces"] {
+.service-link[href="/services/exterior/decks-outdoor-spaces"] {
     background-image: url('/assets/img/services/services-component/decks-outdoor-spaces.webp');
 }
 
@@ -423,7 +446,7 @@ body {
     background-image: url('/assets/img/services/services-component/large/decks-outdoor-spaces.webp');
 }
 
-.service-link[href="/services/custom-carpentry"] {
+.service-link[href="/services/custom-work/custom-carpentry"] {
     background-image: url('/assets/img/services/services-component/custom-carpentry.webp');
 }
 
@@ -431,7 +454,8 @@ body {
     background-image: url('/assets/img/services/services-component/large/custom-carpentry.webp');
 }
 
-.service-link[href="/services/outbuildings-specialty-structures"] {
+.service-link[href="/services/exterior/outbuildings-specialty-structures"],
+.service-link[href="/services/custom-work/outbuildings-specialty-structures"] {
     background-image: url('/assets/img/services/services-component/animal-dwellings.webp');
 }
 
@@ -439,9 +463,11 @@ body {
     background-image: url('/assets/img/services/services-component/large/animal-dwellings.webp');
 }
 
-.service-link[href="/services/other-renovations"] {
-    background-image: url('/assets/img/services/services-component/other-renovations.webp');
+.service-link[href="/services/sustainable-reuse"] {
+    background-image: url('/assets/img/services/animal-dwellings/34.jpg');
 }
+
+
 
 #hero_other {
     background-image: url('/assets/img/services/services-component/large/other-renovations.webp');
@@ -781,6 +807,6 @@ body {
     }
 
     .service-item:last-child {
-        grid-column: span 3;
+        // grid-column: span 3;
     }
 }
